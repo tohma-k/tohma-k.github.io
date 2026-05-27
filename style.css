@@ -6,13 +6,6 @@ body {
   line-height: 1.6;
 }
 
-header {
-  padding: 80px 20px;
-  text-align: center;
-  background: #111827;
-  color: white;
-}
-
 header h1 {
   font-size: 48px;
   margin-bottom: 10px;
@@ -21,13 +14,6 @@ header h1 {
 header p {
   max-width: 650px;
   margin: 0 auto 24px;
-}
-
-.links a {
-  color: white;
-  margin: 0 10px;
-  text-decoration: none;
-  border-bottom: 1px solid white;
 }
 
 main {
@@ -54,4 +40,55 @@ section {
 
 a {
   color: #2563eb;
+}
+
+.hero {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 80px 24px;
+}
+
+.eyebrow {
+  color: #93c5fd;
+  font-weight: 600;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.hero h1 {
+  font-size: 64px;
+  margin: 0 0 16px;
+}
+
+.hero-text {
+  max-width: 700px;
+  font-size: 20px;
+  line-height: 1.7;
+  color: #cbd5e1;
+}
+
+.hero-links {
+  margin-top: 32px;
+}
+
+.hero-links a {
+  display: inline-block;
+  margin: 8px;
+  padding: 12px 20px;
+  border-radius: 999px;
+  background: white;
+  color: #0f172a;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.hero-links a:hover {
+  transform: translateY(-2px);
 }
