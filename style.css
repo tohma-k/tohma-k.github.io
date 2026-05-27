@@ -38,10 +38,6 @@ section {
   margin-top: 0;
 }
 
-a {
-  color: #2563eb;
-}
-
 .hero {
   min-height: 70vh;
   display: flex;
@@ -62,13 +58,15 @@ a {
 }
 
 .hero h1 {
-  font-size: 64px;
-  margin: 0 0 16px;
+  font-size: 72px;
+  max-width: 1000px;
+  line-height: 1.1;
+  margin-bottom: 24px;
 }
 
 .hero-text {
-  max-width: 700px;
-  font-size: 20px;
+  max-width: 750px;
+  font-size: 22px;
   line-height: 1.7;
   color: #cbd5e1;
 }
@@ -80,15 +78,16 @@ a {
 .hero-links a {
   display: inline-block;
   margin: 8px;
-  padding: 12px 20px;
+  padding: 12px 22px;
   border-radius: 999px;
   background: white;
   color: #0f172a;
   text-decoration: none;
   font-weight: 600;
-  transition: 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .hero-links a:hover {
   transform: translateY(-2px);
+  opacity: 0.9;
 }
