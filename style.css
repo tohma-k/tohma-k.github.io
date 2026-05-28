@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
   margin: 0;
   background: #f7f7f7;
   color: #222;
@@ -26,7 +26,7 @@ body {
 }
 
 .hero h1 {
-  font-size: 72px;
+  font-size: clamp(48px, 8vw, 64px);
   max-width: 1000px;
   line-height: 1.1;
   margin-bottom: 24px;
@@ -76,6 +76,13 @@ main {
   color: #0f172a;
 }
 
+.section-subtext {
+  color: #64748b;
+  margin-top: -12px;
+  margin-bottom: 32px;
+  font-size: 18px;
+}
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -88,6 +95,13 @@ main {
   padding: 28px;
   border-radius: 20px;
   box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover,
+.experience-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.12);
 }
 
 .project-card h3,
