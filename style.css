@@ -120,11 +120,24 @@ main {
   color: #2563eb !important;
 }
 
-.project-card a {
-  display: inline-block;
-  margin-top: 12px;
-  font-weight: 600;
+.project-links {
+  margin-top: 18px;
+  display: flex;
+  gap: 12px;
+}
+
+.project-links a {
+  padding: 10px 16px;
+  border-radius: 10px;
+  background: #eff6ff;
   color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.project-links a:hover {
+  background: #dbeafe;
 }
 
 @media (max-width: 800px) {
